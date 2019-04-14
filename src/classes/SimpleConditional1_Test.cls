@@ -94,13 +94,13 @@ private class SimpleConditional1_Test
     @isTest
     static void IsEvenFail_Test()
     {
-        System.assertEquals(true, SimpleConditional1.IsEven(-1));
+        System.assertEquals(false, SimpleConditional1.IsEven(-1));
     }
 
     @isTest
     static void IsEvenFail2_Test()
     {
-        System.assertEquals(true, SimpleConditional1.IsEven(1));
+        System.assertEquals(false, SimpleConditional1.IsEven(1));
     }
 
     @isTest
@@ -148,13 +148,13 @@ private class SimpleConditional1_Test
     @isTest
     static void GetLargest8_Test()
     {
-        System.assertEquals(-1, SimpleConditional1.GetLargest(-10, -50, -2, 0));
+        System.assertEquals(0, SimpleConditional1.GetLargest(-10, -50, -2, 0));
     }
 
     @isTest
     static void GetLargest9_Test()
     {
-        System.assertEquals(-1, SimpleConditional1.GetLargest(-10, -55, -1, 3));
+        System.assertEquals(3, SimpleConditional1.GetLargest(-10, -55, -1, 3));
     }
 
     @isTest 
@@ -184,7 +184,7 @@ private class SimpleConditional1_Test
     @isTest 
     static void Compare_Test5()
     {
-        System.assertEquals(1, SimpleConditional1.Compare(19999, 20000));
+        System.assertEquals(-1, SimpleConditional1.Compare(19999, 20000));
     }
     
     @isTest 

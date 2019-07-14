@@ -11,6 +11,8 @@ public with sharing class SimpleConditional1
         if (one == other){
             equalCheck = true;
         }
+
+        //nothing else needed
         return equalCheck;
     }
 

@@ -5,7 +5,13 @@ public with sharing class SimpleConditional1
         // change this method to return true when
         // one is equal to other and false when
         // one is not equal to other
-        return null;
+
+        Boolean equalCheck = false;
+
+        if (one == other){
+            equalCheck = true;
+        }
+        return equalCheck;
     }
 
     public static Boolean IsPositive(Integer num)
